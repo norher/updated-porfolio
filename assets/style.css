@@ -1,0 +1,18 @@
+:root {
+    --green: #11c711;
+    --compliment1: #11a3c7;
+    --razzle: #c7115a;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: brown;
+}
+
+body {
+    background-color: whitesmoke;
+}
