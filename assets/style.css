@@ -1,7 +1,7 @@
 :root {
-    --green: #11c711;
-    --compliment1: #11a3c7;
-    --razzle: #c7115a;
+    --newYellow: #F5E106;
+    --compliment1: #061AF4;
+    --razzle: #F40691;
 }
 
 header {
@@ -10,9 +10,21 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: brown;
+    background-color: whitesmoke;
 }
 
-body {
-    background-color: whitesmoke;
+#imageText {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    right: 45%;
+}
+
+#imageText h1 {
+    font-size: 450%;
+    color: var(--newYellow);
+}
+
+#imageText h2 {
+    font-size: 350%;
 }
