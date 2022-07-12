@@ -9,13 +9,14 @@
     <title>Norman Herrera, Web Developer</title>
 </head>
 <body>
-    <header>
+    <header class="spaceBetween">
         <img src="./assets/images/nhlogo.png" alt="NH Logo" width="6%" height="6%"/>
         <nav>
             <a href="#About"><button class="btn btn-outline-dark">About</button></a>
             <a href="#Current"><button class="btn btn-outline-dark">Current Project</button></a>
-            <a href="#Recent"><button class="btn btn-outline-dark">Recent Projects</button></a>
+            <a href="#Recent"><button class="btn btn-outline-dark">Recent Work</button></a>
             <a href="#Contact"><button class="btn btn-outline-dark">Contact</button></a>
+            <a href=""><button class="btn btn-outline-dark">Resume</button></a>
         </nav>
     </header>
     <main>
@@ -26,19 +27,24 @@
                 <h2>Fullstack Developer</h2>
             </div>
         </div>
-        <div id="Current" class="container rounded-4">
-            <h2>I'm currently working on a NodeJs Application</h2>
-            <p>
-                This is an automatic README.md file maker. <br>
-                Straight back end Application. No deployment necessary. <br>
-                Tech being used: <strong>NodeJs</strong> <br> 
-                <strong> NPM Package: Inquirer </strong>
-            </p>
-            <a href="https://github.com/norher/ReadMe_Generator" target="_blank"><button class="btn btn-outline-dark">See Code</button></a>
+        <div id="Current">
+            <div class="column">
+                <div class="mainHeader">I'm currently working on a NodeJs Application</div>
+                <div class="imageDescription">
+                    <p>
+                        This is an automatic README.md file maker. <br>
+                        Straight back end Application. No deployment necessary. <br>
+                        Tech being used: <strong>Node.Js</strong> <br> 
+                        <strong> NPM Package: Inquirer </strong>
+                    </p>
+                    <a href="https://github.com/norher/ReadMe_Generator" target="_blank"><button class="btn btn-outline-dark">See Code</button></a>
+                </div>
+            </div>
         </div>
         <div id="Recent" class="row">
+            <div class="mainHeader">Recent Work</div>
             <div class="card">
-                <img class="actualImage"src="./assets/images/rainorshinecity.png" alt="Rain or Shine Landing Page">
+                <img class="actualImage" src="./assets/images/rainorshinecity.png" alt="Rain or Shine Landing Page">
                 <div class="overlay">
                     <div class="imageTitle">Rain or Shine</div>
                     <p class="imageDescription">
@@ -69,24 +75,21 @@
                 </div>
             </div>
         </div>
-        <div id="Contact">
-            <h3>See more of my projects in my github Acoount!</h3>
-            <a href="https://github.com/norher" target="_blank">
-            <img src=".//assets/images/github.svg" height="3%" width="3%" alt="github icon"/>    
-            </a>
-            <a href="https://www.instagram.com/norman.herrera/" target="_blank">
-            <img src=".//assets/images/instagram.svg" height="3%" width="3%" alt="instagram icon"/>    
-            </a>
-            <a href="https://www.linkedin.com/in/norman-herrera-dev/" target="_blank">
-            <img src=".//assets/images/linkedin.svg" height="3%" width="3%" alt="linkedin icon"/>    
-            </a>
-            <a href="mailto:normanh.dev@gmail.com" target="_blank">
-            <img src=".//assets/images/mail.svg" height="3%" width="3%" alt="mail icon"/>    
-            </a>
+        <div id="Contact column">
+            <div class="mainHeader">Social Accounts</div>
+                <a href="https://github.com/norher" target="_blank">
+                    <img src=".//assets/images/github.svg" height="5%" width="5%" alt="github icon"/></a>
+                <a href="https://www.instagram.com/norman.herrera/" target="_blank">
+                    <img src=".//assets/images/instagram.svg" height="5%" width="5%" alt="instagram icon"/></a>
+                <a href="https://www.linkedin.com/in/norman-herrera-dev/" target="_blank">
+                    <img src=".//assets/images/linkedin.svg" height="5%" width="5%" alt="linkedin icon"/></a>
+                <a href="mailto:normanh.dev@gmail.com" target="_blank">
+                    <img src=".//assets/images/mail.svg" height="5%" width="5%" alt="mail icon"/></a>
         </div>    
     </main>
     <footer>
-        <h3>Desgined by Norms</h3>
+        <h3 class="centerAlign">Coded by Norms 2022</h3>
+        <p class="centerAlign">Take a look at this application's <a href="https://github.com/norher/updated-porfolio">code!</a></p>
     </footer>
 </body>
 </html>

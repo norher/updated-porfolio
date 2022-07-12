@@ -4,7 +4,7 @@
     --razzle: #F40691;
 }
 
-header {
+.spaceBetween {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -32,15 +32,22 @@ header {
 }
 
 #Current {
-    flex-wrap: wrap;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     padding: 1%;
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-top: 2%;
     margin-bottom: 2%;
-    background-color: var(--compliment1);
+}
+
+.mainHeader {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+    color: var(--newYellow);
+    text-shadow: 2px 2px var(--compliment1);
 }
 
 .row {
@@ -48,9 +55,14 @@ header {
     flex-direction: row;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     position: relative;
-    width: 33%;
+    width: 33.3%;
 }
 
 .actualImage {
@@ -104,4 +116,8 @@ header {
 .imageDescription {
     font-size: 1.25em;
     margin-top: 0.25em;
+}
+
+.centerAlign {
+    text-align: center;
 }
