@@ -1,6 +1,6 @@
 :root {
     --newYellow: #F5E106;
-    --compliment1: #061AF4;
+    --compliment1: #061af45b;
     --razzle: #F40691;
 }
 
@@ -11,12 +11,14 @@ header {
     align-items: center;
     justify-content: space-evenly;
     background-color: whitesmoke;
+    padding: 1% 0%;
 }
+
 
 #imageText {
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 35%;
     right: 45%;
 }
 
@@ -27,4 +29,79 @@ header {
 
 #imageText h2 {
     font-size: 350%;
+}
+
+#Current {
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 1%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--compliment1);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    position: relative;
+    width: 33%;
+}
+
+.actualImage {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 , 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay-blur {
+    backdrop-filter: blur(5px);
+}
+
+.overlay-primary {
+    background: var(--newYellow);
+    color: black;
+}
+
+.overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.65s;
+}
+.overlay:hover > * {
+    transform: translateY(0);
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.imageTitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.imageDescription {
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }

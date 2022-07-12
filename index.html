@@ -10,61 +10,63 @@
 </head>
 <body>
     <header>
+        <img src="./assets/images/nhlogo.png" alt="NH Logo" width="6%" height="6%"/>
         <nav>
             <a href="#About"><button class="btn btn-outline-dark">About</button></a>
             <a href="#Current"><button class="btn btn-outline-dark">Current Project</button></a>
-            <a href="#Past"><button class="btn btn-outline-dark">Recent Projects</button></a>
-            <a href="#ontact"><button class="btn btn-outline-dark">Contact</button></a>
+            <a href="#Recent"><button class="btn btn-outline-dark">Recent Projects</button></a>
+            <a href="#Contact"><button class="btn btn-outline-dark">Contact</button></a>
         </nav>
     </header>
     <main>
-        <div>
+        <div id="About">
             <img src="./assets/images/background.png" width="100%"/>
             <div id="imageText">
                 <h1>Norman Herrera</h1>
                 <h2>Fullstack Developer</h2>
             </div>
         </div>
-        <div id="Current">
+        <div id="Current" class="container rounded-4">
             <h2>I'm currently working on a NodeJs Application</h2>
             <p>
-                This is a README.md file maker. <br>
-                Straight BackEnd Application. No deployment necessary. <br>
-                Tech being used: <br> NodeJs NPM-Packages: inquirer
+                This is an automatic README.md file maker. <br>
+                Straight back end Application. No deployment necessary. <br>
+                Tech being used: <strong>NodeJs</strong> <br> 
+                <strong> NPM Package: Inquirer </strong>
             </p>
-            <a href="https://github.com/norher/ReadMe_Generator" target="_blank"><button>See Code</button></a>
+            <a href="https://github.com/norher/ReadMe_Generator" target="_blank"><button class="btn btn-outline-dark">See Code</button></a>
         </div>
-        <div id="Past">
+        <div id="Recent" class="row">
             <div class="card">
-                <h2>Rain or Shine</h2>
-                <a href="https://darrinling.github.io/rain-or-shine/index.html" target="_blank">
-                    <img src="./assets/images/rainorshinecity.png" alt="Rain or Shine Landing Page" height="25%" width="40%" >
-                </a>
-                <p>
-                    Application to retrive weather using API calls. <br>
-                    With logic to reccomend the user on food, drinks or activities based on weather.
-                </p>
-                <a href="https://github.com/darrinling/rain-or-shine" target="_blank"><button>See Code</button></a>
+                <img class="actualImage"src="./assets/images/rainorshinecity.png" alt="Rain or Shine Landing Page">
+                <div class="overlay">
+                    <div class="imageTitle">Rain or Shine</div>
+                    <p class="imageDescription">
+                        Application to retrive weather using API calls. <br>
+                        With logic to reccomend the user on food, <br> drinks or activities based on weather.</p>
+                    <a href="https://darrinling.github.io/rain-or-shine/index.html" target="_blank"><button class="btn mb-2 btn-outline-light">Deployed App</button></a>
+                    <a href="https://github.com/darrinling/rain-or-shine" target="_blank" ><button class="btn btn-outline-light">See Code</button></a>
+                </div>
             </div>
             <div class="card">
-                <h2>Weather Dashboard</h2>
-                <a href="https://norher.github.io/Whether-API/" target="_blank">
-                    <img src="./assets/images/weatherdasss.png" alt= "Weather Dashboard Landing Page" height="25%" width="40%" >
-                </a>
-                <p>
-                    Application to retrive weather. <br>
-                    Application displays current weather, and a 5-day forecast.
-                </p>
-                <a href="https://github.com/norher/Whether-API" target="_blank"><button>See Code</button></a>
+                <img class="actualImage" src="./assets/images/weatherdasss.png" alt= "Weather Dashboard Landing Page"/>
+                <div class="overlay overlay-blur">
+                <div class="imageTitle">Weather Dashboard</div>
+                    <p class="imageDescription">Application to retrive weather. <br>
+                    Application displays current weather, and a 5-day forecast of any city searched for.</p>
+                    <a href="https://norher.github.io/Whether-API/" target="_blank"><button class="btn mb-2 btn-outline-light">Deployed App</button></a>
+                    <a href="https://github.com/norher/Whether-API" target="_blank"><button class="btn btn-outline-light">See Code</button></a>
+                </div>
             </div>
             <div class="card">
-                <h2>Coding Quiz</h2>
-                <a href="https://norher.github.io/coding-quiz/" target="_blank"><img src="./assets/images/codingquiz.png" alt= "Coding Quiz Landing Page" height="25%" width="40%"></a>
-                <p>
-                    Come take a coding quiz and test your skills! <br>
-                    This application will test your coding skills and even save your high scores.
-                </p>
-                <a href="https://github.com/norher/coding-quiz" target="_blank"><button>See Code</button></a>
+                <img class="actualImage" src="./assets/images/codingquiz.png" alt= "Coding Quiz Landing Page"/>
+                <div class="overlay overlay-primary">
+                <div class="imageTitle">Coding Quiz</div>
+                    <p class="imageDescription">Come take a coding quiz and test your skills! <br>
+                    This application will test your coding skills and even save your high scores.</p>
+                    <a href="https://norher.github.io/coding-quiz/" target="_blank"><button class="btn mb-2 btn-outline-dark">Deployed App</button></a>
+                    <a href="https://github.com/norher/coding-quiz" target="_blank"><button class="btn btn-outline-dark">See Code</button></a>
+                </div>
             </div>
         </div>
         <div id="Contact">
