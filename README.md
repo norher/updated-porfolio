@@ -19,7 +19,7 @@ https://opensource.org/licenses/Apache-2.0
 
 ## Description
 
-Resume that includes my latest projects
+Portfolio Page that includes my latest projects
 
 ## Installation
 
